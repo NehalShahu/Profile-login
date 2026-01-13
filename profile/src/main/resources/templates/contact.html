@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Contact Terminal</title>
+    <link rel="stylesheet" th:href="@{/css/hacker.css}">
+</head>
+<body>
+    <div class="card">
+        <h2>> SEND_ENCRYPTED_MSG</h2>
+        <form th:action="@{/contact}" method="post">
+            <input type="email" name="email" placeholder="YOUR_EMAIL_ADDRESS" required>
+            <textarea name="message" placeholder="ENTER_ENCRYPTED_MESSAGE" rows="4" required></textarea>
+            <button type="submit">TRANSMIT SIGNAL</button>
+        </form>
+        <a href="/profile">>> RETURN_TO_DASHBOARD</a>
+    </div>
+</body>
+</html>
